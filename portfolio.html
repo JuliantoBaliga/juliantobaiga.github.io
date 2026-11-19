@@ -1,163 +1,91 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeri Proyek Web — Urutan 1–3</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Profil Saya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#top">Showcase Proyek Web</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto gap-2">
-          <li class="nav-item"><a class="nav-link active" href="#galeri">Urutan Foto (1–3)</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ringkasan">Ringkasan</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <header id="top" class="py-4 bg-primary text-white">
-    <div class="container">
-      <span class="badge bg-light text-primary mb-2">Urutan Terverifikasi: 1 → 3</span>
-      <h1 class="h3 fw-bold mb-1">Rangkaian Tampilan Sistem Proyek &amp; Material</h1>
-      <p class="small mb-0 text-white-50">
-        Ukuran gambar disesuaikan agar ringan dimuat dan proporsional di halaman.
-      </p>
-    </div>
-  </header>
-
-  <main id="galeri" class="py-4">
-    <div class="container">
-      <div class="row g-3">
-        <!-- Foto 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 project-card">
-            <div class="img-box bg-light border-bottom">
-              <img src="assets/img/foto-1-portal-berita.jpg" class="project-img" alt="Foto 1 - Portal Berita Proyek" />
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Akbar.NET</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                </ul>
             </div>
-            <div class="card-body p-3 d-flex flex-column">
-              <div class="mb-1">
-                <span class="badge bg-primary">Foto 1</span>
-              </div>
-              <h2 class="h6 card-title fw-bold mb-1">Portal Berita Proyek</h2>
-              <p class="card-text text-muted small flex-grow-1 mb-2">
-                Progres pekerjaan Blok E Etip, berita proyek terbaru, berita populer, dan informasi proyek.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalFoto1">
-                Lihat Ukuran Penuh
-              </button>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Portofolio Proyek</h2>
+            <p class="text-muted">Beberapa proyek pengembangan web dan sistem yang pernah saya kerjakan.</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Proyek 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm card-hover">
+                    <img src="https://via.placeholder.com/400x220?text=Portal+Berita+Sekolah" class="card-img-top" alt="Proyek 1">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Laravel & Bootstrap 5</span>
+                        <h5 class="card-title fw-bold">Untuk proyek pertama (skala kecil, biasanya di bawah 2.500 m² atau beberapa unit rumah/kavling), fokus utamanya adalah validasi pasar, legalitas, dan manajemen modal:</h5>
+                        <p class="card-text text-muted">• Frontend (Tampilan & Interaksi): Gunakan HTML, CSS, dan JavaScript murni (atau framework seperti React / Next.js) dipadukan dengan Bootstrap atau Tailwind CSS. Kombinasi ini memudahkan pembuatan dashboard responsif, tabel RAB, dan grafik arus kas.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="https://github.com/juliantobaliga" target="_blank" class="btn btn-outline-primary btn-sm w-100">Lihat di GitHub</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Foto 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 project-card">
-            <div class="img-box bg-light border-bottom">
-              <img src="assets/img/foto-2-rab-pro.jpg" class="project-img" alt="Foto 2 - RAB Pro" />
+            <!-- Proyek 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm card-hover">
+                    <img src="https://via.placeholder.com/400x220?text=Web+Profil+Sekolah" class="card-img-top" alt="Proyek 2">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">HTML & CSS</span>
+                        <h5 class="card-title fw-bold">Website Perhitungan RAB, Arsitek, & Kontraktor</h5>
+                        <p class="card-text text-muted">Estimator.id. Aplikasi web lokal untuk menyusun Rencana Anggaran Biaya (RAB) berdasarkan standar SNI dan database harga material serta upah tukang di berbagai daerah.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="https://juliantobaliga.github.io" target="_blank" class="btn btn-outline-primary btn-sm w-100">Kunjungi Situs</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-body p-3 d-flex flex-column">
-              <div class="mb-1">
-                <span class="badge bg-primary">Foto 2</span>
-              </div>
-              <h2 class="h6 card-title fw-bold mb-1">RAB Pro</h2>
-              <p class="card-text text-muted small flex-grow-1 mb-2">
-                Perhitungan RAB arsitek &amp; kontraktor, form informasi proyek, daftar pekerjaan, dan ringkasan anggaran.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalFoto2">
-                Lihat Ukuran Penuh
-              </button>
+
+            <!-- Proyek 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm card-hover">
+                    <img src="https://via.placeholder.com/400x220?text=Sistem+Inventaris" class="card-img-top" alt="Proyek 3">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">SQLite & Spreadsheet</span>
+                        <h5 class="card-title fw-bold">Sistem Rekap Stok & Kubikasi Material</h5>
+                        <p class="card-text text-muted">Struktur pencatatan keluar-masuk material konstruksi, pelacakan surat jalan, dan kontrol stok gudang.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0 pb-3">
+                        <a href="contact.html" class="btn btn-outline-secondary btn-sm w-100">Minta Detail</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </main>
 
-        <!-- Foto 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm border-0 project-card">
-            <div class="img-box bg-light border-bottom">
-              <img src="assets/img/foto-3-material-pro.jpg" class="project-img" alt="Foto 3 - MaterialPro" />
-            </div>
-            <div class="card-body p-3 d-flex flex-column">
-              <div class="mb-1">
-                <span class="badge bg-primary">Foto 3</span>
-              </div>
-              <h2 class="h6 card-title fw-bold mb-1">MaterialPro</h2>
-              <p class="card-text text-muted small flex-grow-1 mb-2">
-                Dashboard rekap stok dan kubikasi material, grafik stok, komposisi material, dan detail rekap stok.
-              </p>
-              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalFoto3">
-                Lihat Ukuran Penuh
-              </button>
-            </div>
-          </div>
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <small>&copy; 2026 Akbar Julianto. Dibuat dengan Bootstrap 5 & GitHub Pages.</small>
         </div>
-      </div>
+    </footer>
 
-      <section id="ringkasan" class="mt-4 p-3 bg-white rounded-3 shadow-sm border">
-        <h3 class="small fw-bold text-uppercase text-muted mb-2">Urutan &amp; File Gambar (Ukuran Ringkas)</h3>
-        <ol class="mb-0 small text-secondary">
-          <li><strong>Foto 1</strong>: Portal Berita Proyek (<code>assets/img/foto-1-portal-berita.jpg</code>)</li>
-          <li><strong>Foto 2</strong>: RAB Pro (<code>assets/img/foto-2-rab-pro.jpg</code>)</li>
-          <li><strong>Foto 3</strong>: MaterialPro (<code>assets/img/foto-3-material-pro.jpg</code>)</li>
-        </ol>
-      </section>
-    </div>
-  </main>
-
-  <!-- Modals -->
-  <div class="modal fade" id="modalFoto1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header py-2">
-          <h5 class="modal-title h6 mb-0">Foto 1 — Portal Berita Proyek</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body text-center p-3">
-          <img src="assets/img/foto-1-portal-berita.jpg" class="img-fluid rounded modal-preview-img" alt="Foto 1" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalFoto2" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header py-2">
-          <h5 class="modal-title h6 mb-0">Foto 2 — RAB Pro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body text-center p-3">
-          <img src="assets/img/foto-2-rab-pro.jpg" class="img-fluid rounded modal-preview-img" alt="Foto 2" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modalFoto3" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header py-2">
-          <h5 class="modal-title h6 mb-0">Foto 3 — MaterialPro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body text-center p-3">
-          <img src="assets/img/foto-3-material-pro.jpg" class="img-fluid rounded modal-preview-img" alt="Foto 3" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="py-3 bg-dark text-white-50 text-center small">
-    <div class="container">HTML5 &amp; Bootstrap 5 • Ukuran Gambar Disesuaikan</div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
