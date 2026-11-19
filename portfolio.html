@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio - Profil Saya</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri Proyek Web — Akbar Julianto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#top">Showcase Proyek Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link active" href="#galeri">Urutan Foto (1–3)</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ringkasan">Ringkasan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Akbar.NET</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
-                </ul>
+  <header id="top" class="py-5 bg-primary text-white">
+    <div class="container">
+      <span class="badge bg-light text-primary mb-2">Urutan Terverifikasi: 1 → 3</span>
+      <h1 class="display-6 fw-bold mb-2">Rangkaian Tampilan Sistem Proyek &amp; Material</h1>
+      <p class="lead mb-0 text-white-50">
+        Tiga tampilan antarmuka web yang disusun berurutan dari awal sesuai pengiriman.
+      </p>
+    </div>
+  </header>
+
+  <main id="galeri" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Foto 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 project-card">
+            <div class="position-relative">
+              <img src="assets/img/input_file_4.png" class="card-img-top project-img" alt="Foto 1 - Portal Berita Proyek" />
+              <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">Foto 1</span>
             </div>
-        </div>
-    </nav>
-
-    <main class="container my-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold">Portofolio Proyek</h2>
-            <p class="text-muted">Beberapa proyek pengembangan web dan sistem yang pernah saya kerjakan.</p>
-        </div>
-
-        <div class="row g-4">
-            <!-- Proyek 1 -->
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm card-hover">
-                    <img src="https://via.placeholder.com/400x220?text=Portal+Berita+Sekolah" class="card-img-top" alt="Proyek 1">
-                    <div class="card-body">
-                        <span class="badge bg-primary mb-2">Laravel & Bootstrap 5</span>
-                        <h5 class="card-title fw-bold">Untuk proyek pertama (skala kecil, biasanya di bawah 2.500 m² atau beberapa unit rumah/kavling), fokus utamanya adalah validasi pasar, legalitas, dan manajemen modal:</h5>
-                        <p class="card-text text-muted">• Frontend (Tampilan & Interaksi): Gunakan HTML, CSS, dan JavaScript murni (atau framework seperti React / Next.js) dipadukan dengan Bootstrap atau Tailwind CSS. Kombinasi ini memudahkan pembuatan dashboard responsif, tabel RAB, dan grafik arus kas.</p>
-                    </div>
-                    <div class="card-footer bg-white border-0 pb-3">
-                        <a href="https://github.com/juliantobaliga" target="_blank" class="btn btn-outline-primary btn-sm w-100">Lihat di GitHub</a>
-                    </div>
-                </div>
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5 card-title fw-bold">Portal Berita Proyek</h2>
+              <p class="card-text text-muted small flex-grow-1">
+                Menampilkan progres pekerjaan Blok E Etip, berita proyek terbaru, daftar berita populer, serta informasi proyek.
+              </p>
+              <button class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalFoto1">
+                Lihat Ukuran Penuh
+              </button>
             </div>
-
-            <!-- Proyek 2 -->
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm card-hover">
-                    <img src="https://via.placeholder.com/400x220?text=Web+Profil+Sekolah" class="card-img-top" alt="Proyek 2">
-                    <div class="card-body">
-                        <span class="badge bg-success mb-2">HTML & CSS</span>
-                        <h5 class="card-title fw-bold">Website Perhitungan RAB, Arsitek, & Kontraktor</h5>
-                        <p class="card-text text-muted">Estimator.id. Aplikasi web lokal untuk menyusun Rencana Anggaran Biaya (RAB) berdasarkan standar SNI dan database harga material serta upah tukang di berbagai daerah.</p>
-                    </div>
-                    <div class="card-footer bg-white border-0 pb-3">
-                        <a href="https://juliantobaliga.github.io" target="_blank" class="btn btn-outline-primary btn-sm w-100">Kunjungi Situs</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyek 3 -->
-            <div class="col-md-4">
-                <div class="card h-100 border-0 shadow-sm card-hover">
-                    <img src="https://via.placeholder.com/400x220?text=Sistem+Inventaris" class="card-img-top" alt="Proyek 3">
-                    <div class="card-body">
-                        <span class="badge bg-warning text-dark mb-2">SQLite & Spreadsheet</span>
-                        <h5 class="card-title fw-bold">Sistem Rekap Stok & Kubikasi Material</h5>
-                        <p class="card-text text-muted">Struktur pencatatan keluar-masuk material konstruksi, pelacakan surat jalan, dan kontrol stok gudang.</p>
-                    </div>
-                    <div class="card-footer bg-white border-0 pb-3">
-                        <a href="contact.html" class="btn btn-outline-secondary btn-sm w-100">Minta Detail</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </main>
 
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
-        <div class="container">
-            <small>&copy; 2026 Akbar Julianto. Dibuat dengan Bootstrap 5 & GitHub Pages.</small>
+        <!-- Foto 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 project-card">
+            <div class="position-relative">
+              <img src="assets/img/input_file_5.png" class="card-img-top project-img" alt="Foto 2 - RAB Pro" />
+              <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">Foto 2</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5 card-title fw-bold">RAB Pro</h2>
+              <p class="card-text text-muted small flex-grow-1">
+                Halaman perhitungan RAB arsitek &amp; kontraktor lengkap dengan form informasi proyek, daftar pekerjaan, ringkasan anggaran, dan aksi cepat.
+              </p>
+              <button class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalFoto2">
+                Lihat Ukuran Penuh
+              </button>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+        <!-- Foto 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0 project-card">
+            <div class="position-relative">
+              <img src="assets/img/input_file_6.png" class="card-img-top project-img" alt="Foto 3 - MaterialPro" />
+              <span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">Foto 3</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h2 class="h5 card-title fw-bold">MaterialPro</h2>
+              <p class="card-text text-muted small flex-grow-1">
+                Dashboard sistem rekap stok dan kubikasi material dengan kartu metrik, grafik stok, komposisi material, dan tabel detail rekap stok.
+              </p>
+              <button class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalFoto3">
+                Lihat Ukuran Penuh
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+...
